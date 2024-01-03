@@ -12,7 +12,7 @@ public class Game {
         unit1.chClass = "Berserk";
         unit1.setWeapon("Axe", "Spear");
         unit1.speed = 3.8f;
-        unit1.hp = 175;
+        unit1.hp = 150;
         System.out.println("Type - " + unit1.type + "\r\n" + "Class - " + unit1.chClass + "\r\n" + unit1.setHumanity() + "\r\n");
         System.out.println("Stats:" + "\r\n" + "Base HP = " + unit1.hp + "\r\n" + "Base speed = " + unit1.speed + "\r\n" + "Base weapons = " + unit1.weapons + "\r\n");
         unit1.run();
@@ -44,7 +44,7 @@ public class Game {
         unit3.chClass = "Knight";
         unit3.setWeapon("Sword", "Shield");
         unit3.speed = 5.3f;
-        unit3.hp = 125;
+        unit3.hp = 115;
         System.out.println("Type - " + unit3.type + "\r\n" + "Class - " + unit3.chClass + "\r\n" + unit3.setHumanity() + "\r\n");
         System.out.println("Stats:" + "\r\n" + "Base HP = " + unit3.hp + "\r\n" + "Base speed = " + unit3.speed + "\r\n" + "Base weapons = " + unit2.weapons + "\r\n");
         unit3.run();
