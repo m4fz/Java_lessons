@@ -20,6 +20,7 @@ public class GameUnit {
     boolean weaponType;
 
     void setMaxHp(){
+
         maxHp = hp;
     }
     void run() {
