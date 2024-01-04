@@ -24,7 +24,7 @@ public class GameUnit {
         maxHp = hp;
     }
     void run() {
-        System.out.println(type + " is approaching an enemy with a speed of " + speed + " km/h." + "\r\n");
+        System.out.println(type + " is approaching an enemy with a speed of " + speed + " km/h." + "\n");
     }
     void setWeapon(String weapon1, String weapon2){
         primaryWeapon = weapon1;
@@ -56,13 +56,13 @@ public class GameUnit {
         }
         rollForDamage();
         if(damage == 0){
-            System.out.println(type + " failed his attack." + "\r\n");
+            System.out.println(type + " failed his attack." + "\n");
         }
         else if(attackWeapon.equalsIgnoreCase("Shield")){
-            System.out.println("This turn " + type + " did " + damage + " damage" + " with a " + attackWeapon + "bash" + "\r\n");
+            System.out.println("This turn " + type + " did " + damage + " damage" + " with a " + attackWeapon + "bash" + "\n");
         }
         else {
-            System.out.println("This turn " + type + " did " + damage + " damage" + " with a " + attackWeapon + "\r\n");
+            System.out.println("This turn " + type + " did " + damage + " damage" + " with a " + attackWeapon + "\n");
         }
     }
     void takeDamage() {
@@ -101,13 +101,13 @@ public class GameUnit {
             if (hp > maxHp){
                 hp = maxHp;
             }
-            System.out.println(type + " is curing for " + healAmount + " hp." + "\r\n" + "Total hp - " + hp + "." + "\r\n");
+            System.out.println(type + " is curing for " + healAmount + " hp." + "\n" + "Total hp - " + hp + "." + "\n");
         }
         else{
-            System.out.println(type + " does not need healing." + "\r\n");
+            System.out.println(type + " does not need healing." + "\n");
         }
     }
     void speak(){
-        System.out.println(type + " is now speaking with a merchant." + "\r\n");
+        System.out.println(type + " is now speaking with a merchant." + "\n");
     }
 }
