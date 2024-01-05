@@ -3,7 +3,7 @@ package ru.java_lessons.lesson2;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Rock_Scissors_Paper {
+public class Rock_Paper_Scissors {
     final static String ROCK = "rock";
     final static String SCISSORS = "scissors";
     final static String PAPER = "paper";

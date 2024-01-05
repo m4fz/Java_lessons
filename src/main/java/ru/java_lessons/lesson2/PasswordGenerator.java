@@ -24,7 +24,7 @@ public class PasswordGenerator {
             System.out.println("\u001B[31m" + "\033[3m'invalid command'\033[0m");
             go = scan.next();
         }
-        while (!go.equalsIgnoreCase("q") & go.equalsIgnoreCase("y")){
+        while (go.equalsIgnoreCase("y")){
             System.out.println("Set password length and choose if it will be generated form only numbers or letters");
             System.out.println("Password length:");
             psLength = scan.nextInt();
@@ -73,7 +73,7 @@ public class PasswordGenerator {
 
 
     }
-    /** Выбор метода генерации пароля
+    /** Выбор метода генерации пароля на основе выбора пользователя
      * @param passwordLength Длинна пароля
      * onlyD Параметр генерирования только чисел
      * onlyL Параметр генерирования только букв
