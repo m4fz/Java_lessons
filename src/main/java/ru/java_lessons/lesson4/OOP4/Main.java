@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Memory hdd = new HDD();
         Memory ssd = new SSD();
-        Weapon.AXE.getDamage();
+        Weapon1.AXE.getDamage();
 
     }
 }
