@@ -24,6 +24,7 @@ public class StudentArrayList {
 //            students.set(i,(studentNames.get(i) + "-" + studentFaculties.get(i) + "-" + studentAges.get(i)));
 //        }
 //        не получилось осуществить идею.
+//        нужно было использовать ADD за место SET
 
         String students = "";
         for (int i = 0; i < 6; i++) {
