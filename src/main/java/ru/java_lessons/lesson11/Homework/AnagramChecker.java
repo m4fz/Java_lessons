@@ -1,5 +1,6 @@
 package ru.java_lessons.lesson11.Homework;
 
+import java.util.Map;
 import java.util.Scanner;
 import java.util.TreeMap;
 
@@ -22,17 +23,14 @@ public class AnagramChecker {
 
         if (word1.length() != word2.length()) return false;
 
-        TreeMap<Character, Integer> word1Map = new TreeMap<>();
-        TreeMap<Character, Integer> word2Map = new TreeMap<>();
-
-        for (char c : word1.toCharArray()) {
-            word1Map.put(c, word1Map.getOrDefault(c, 0) + 1);
-        }
-        for (char c : word2.toCharArray()) {
-            word2Map.put(c, word2Map.getOrDefault(c, 0) + 1);
-        }
-        return word1Map.equals(word2Map);
+        return getMaps(word1).equals(getMaps(word2));
     }
 
-
+    private static Map<Character, Integer> getMaps(String word){
+        Map<Character, Integer> map = new TreeMap<>();
+        for (char c : word.toCharArray()) {
+            map.put(c, map.getOrDefault(c, 0) + 1);
+        }
+        return map;
+    }
 }
