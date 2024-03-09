@@ -3,7 +3,7 @@ package ru.java_lessons.lesson2;
 /**
  * Управляющие конструкции
  */
-public class Flow {
+public class  Flow {
     public static void main(String[] args) {
         /**
          if else if else
